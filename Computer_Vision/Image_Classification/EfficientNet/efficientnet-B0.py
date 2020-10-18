@@ -88,7 +88,7 @@ def Model():
     
     # output
     pool = tf.keras.layers.GlobalAveragePooling2D()(x)
-    output = tf.keras.layers.Dense(100, activation='softmax')(pool)
+    output = tf.keras.layers.Dense(1000, activation='softmax')(pool)
     
     
     model = tf.keras.Model(model_input, output)
